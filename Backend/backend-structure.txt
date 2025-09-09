@@ -1,0 +1,94 @@
+Folder PATH listing for volume OS
+Volume serial number is 903D-2616
+C:.
+¦   backend-structure.txt
+¦   pom.xml
+¦   README.md
+¦   
++---src
+¦   +---main
+¦       +---java
+¦       ¦   +---com
+¦       ¦       +---edumate
+¦       ¦           +---backend
+¦       ¦               ¦   EduMateBackendApplication.java
+¦       ¦               ¦   
+¦       ¦               +---entity
+¦       ¦               ¦   +---mongodb
+¦       ¦               ¦   ¦       Flashcard.java
+¦       ¦               ¦   ¦       Flashcards.java
+¦       ¦               ¦   ¦       MCQ.java
+¦       ¦               ¦   ¦       Progress.java
+¦       ¦               ¦   ¦       Quiz.java
+¦       ¦               ¦   ¦       
+¦       ¦               ¦   +---sql
+¦       ¦               ¦           Avatar.java
+¦       ¦               ¦           Note.java
+¦       ¦               ¦           Project.java
+¦       ¦               ¦           Reminder.java
+¦       ¦               ¦           Task.java
+¦       ¦               ¦           User.java
+¦       ¦               ¦           
+¦       ¦               +---repository
+¦       ¦                   +---mongodb
+¦       ¦                   ¦       FlashcardRepository.java
+¦       ¦                   ¦       FlashcardsRepository.java
+¦       ¦                   ¦       MCQRepository.java
+¦       ¦                   ¦       ProgressRepository.java
+¦       ¦                   ¦       QuizRepository.java
+¦       ¦                   ¦       
+¦       ¦                   +---sql
+¦       ¦                           AvatarRepository.java
+¦       ¦                           NoteRepository.java
+¦       ¦                           ProjectRepository.java
+¦       ¦                           ReminderRepository.java
+¦       ¦                           TaskRepository.java
+¦       ¦                           UserRepository.java
+¦       ¦                           
+¦       +---resources
+¦               application.yml
+¦               
++---target
+    +---classes
+    ¦   ¦   application.yml
+    ¦   ¦   
+    ¦   +---com
+    ¦       +---edumate
+    ¦           +---backend
+    ¦               ¦   EduMateBackendApplication.class
+    ¦               ¦   
+    ¦               +---entity
+    ¦               ¦   +---mongodb
+    ¦               ¦   ¦       Flashcard.class
+    ¦               ¦   ¦       Flashcards.class
+    ¦               ¦   ¦       MCQ.class
+    ¦               ¦   ¦       Progress.class
+    ¦               ¦   ¦       Quiz.class
+    ¦               ¦   ¦       
+    ¦               ¦   +---sql
+    ¦               ¦           Avatar.class
+    ¦               ¦           Note.class
+    ¦               ¦           Project.class
+    ¦               ¦           Reminder.class
+    ¦               ¦           Task.class
+    ¦               ¦           User.class
+    ¦               ¦           
+    ¦               +---repository
+    ¦                   +---mongodb
+    ¦                   ¦       FlashcardRepository.class
+    ¦                   ¦       FlashcardsRepository.class
+    ¦                   ¦       MCQRepository.class
+    ¦                   ¦       ProgressRepository.class
+    ¦                   ¦       QuizRepository.class
+    ¦                   ¦       
+    ¦                   +---sql
+    ¦                           AvatarRepository.class
+    ¦                           NoteRepository.class
+    ¦                           ProjectRepository.class
+    ¦                           ReminderRepository.class
+    ¦                           TaskRepository.class
+    ¦                           UserRepository.class
+    ¦                           
+    +---generated-sources
+    ¦   +---annotations
+    +---test-classes
