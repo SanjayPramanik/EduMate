@@ -46,6 +46,16 @@ const Navbar = () => {
               Home
             </Link>
             <Link
+              to="/projects"
+              className={`px-3 py-2 rounded-md text-sm font-medium ${
+                isActive("/projects")
+                  ? "bg-indigo-100 text-indigo-700"
+                  : "text-gray-700 hover:text-indigo-600"
+              }`}
+            >
+              Projects
+            </Link>
+            <Link
               to="/notes"
               className={`px-3 py-2 rounded-md text-sm font-medium ${
                 isActive("/notes")
@@ -189,6 +199,17 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Home
+            </Link>
+            <Link
+              to="/projects"
+              className={`block px-3 py-2 rounded-md text-base font-medium ${
+                isActive("/projects")
+                  ? "bg-indigo-100 text-indigo-700"
+                  : "text-gray-700 hover:text-indigo-600"
+              }`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Projects
             </Link>
             <Link
               to="/notes"

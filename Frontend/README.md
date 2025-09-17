@@ -1,3 +1,45 @@
+## EduMate Frontend
+
+### Prerequisites
+
+- Node.js 18+
+- npm 9+
+
+### Install
+
+```bash
+npm install
+```
+
+### Configure API URL (optional)
+
+Create `.env` and set:
+
+```
+VITE_API_URL=http://localhost:3001/api
+```
+
+Defaults to `http://localhost:3001/api` if not set.
+
+### Run Dev Server
+
+```bash
+npm run dev
+```
+
+App runs at `http://localhost:5173`.
+
+### Auth Flow
+
+- Register/Login forms call `/api/auth/register` and `/api/auth/login`
+- On success, token is saved in `localStorage` and routes are protected
+
+### Scripts
+
+- `npm run dev` – start dev server
+- `npm run build` – production build
+- `npm run preview` – preview build
+
 # EduMate Frontend
 
 A modern React application built with Vite, React, and TailwindCSS for the EduMate learning platform.

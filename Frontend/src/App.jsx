@@ -16,6 +16,7 @@ import Quizzes from "./pages/Quizzes";
 import Flashcards from "./pages/Flashcards";
 import Reports from "./pages/Reports";
 import Reminders from "./pages/Reminders";
+import Projects from "./pages/Projects";
 import authService from "./services/authService";
 
 function App() {
@@ -105,6 +106,16 @@ function App() {
               element={
                 authService.isAuthenticated() ? (
                   <Reminders />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
+            <Route
+              path="/projects"
+              element={
+                authService.isAuthenticated() ? (
+                  <Projects />
                 ) : (
                   <Navigate to="/login" />
                 )

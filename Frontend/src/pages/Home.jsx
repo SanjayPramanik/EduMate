@@ -48,49 +48,61 @@ const Home = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 <div className="bg-white p-6 rounded-lg shadow-md">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Notes
+                    Projects
                   </h3>
                   <p className="text-gray-600">
-                    Organize and manage your study notes
+                    Organize your learning materials by project
                   </p>
-                  <button className="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">
-                    Coming Soon
+                  <button 
+                    onClick={() => navigate("/projects")}
+                    className="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700"
+                  >
+                    Manage Projects
                   </button>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-md">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Summaries
+                    Notes & AI Summaries
                   </h3>
                   <p className="text-gray-600">
-                    AI-powered content summarization
+                    Upload files and get AI-powered summaries
                   </p>
-                  <button className="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">
-                    Coming Soon
+                  <button 
+                    onClick={() => navigate("/notes")}
+                    className="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700"
+                  >
+                    View Notes
                   </button>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-md">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Quizzes
+                    AI Quizzes
                   </h3>
                   <p className="text-gray-600">
-                    Test your knowledge with interactive quizzes
+                    Take AI-generated quizzes from your notes
                   </p>
-                  <button className="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">
-                    Coming Soon
+                  <button 
+                    onClick={() => navigate("/quizzes")}
+                    className="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700"
+                  >
+                    Start Quiz
                   </button>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-md">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Flashcards
+                    AI Flashcards
                   </h3>
                   <p className="text-gray-600">
-                    Create and study with digital flashcards
+                    Study with AI-generated flashcards
                   </p>
-                  <button className="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">
-                    Coming Soon
+                  <button 
+                    onClick={() => navigate("/flashcards")}
+                    className="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700"
+                  >
+                    Study Flashcards
                   </button>
                 </div>
 
@@ -101,8 +113,11 @@ const Home = () => {
                   <p className="text-gray-600">
                     Track your learning progress and analytics
                   </p>
-                  <button className="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">
-                    Coming Soon
+                  <button 
+                    onClick={() => navigate("/reports")}
+                    className="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700"
+                  >
+                    View Reports
                   </button>
                 </div>
 
@@ -113,8 +128,11 @@ const Home = () => {
                   <p className="text-gray-600">
                     Set study reminders and deadlines
                   </p>
-                  <button className="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">
-                    Coming Soon
+                  <button 
+                    onClick={() => navigate("/reminders")}
+                    className="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700"
+                  >
+                    Manage Reminders
                   </button>
                 </div>
               </div>
