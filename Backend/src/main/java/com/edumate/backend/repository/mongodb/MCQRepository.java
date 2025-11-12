@@ -14,4 +14,6 @@ public interface MCQRepository extends MongoRepository<MCQ, String> {
     List<MCQ> findByUserIdAndProjectId(String userId, String projectId);
     
     List<MCQ> findByNoteId(String noteId);
+    
+    List<MCQ> findByUserIdAndNoteId(String userId, String noteId);
 }

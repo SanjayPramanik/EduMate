@@ -8,8 +8,13 @@ spring:
   # MySQL Configuration
   datasource:
     url: jdbc:mysql://localhost:3306/edumate_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+<<<<<<< HEAD
+    username: edumate_user
+    password: edumate_password
+=======
     username: root
     password: password
+>>>>>>> ac0fede2e2d5b5943ab149d9bb13b5db726135c7
     driver-class-name: com.mysql.cj.jdbc.Driver
   
   # JPA Configuration
@@ -27,6 +32,16 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017/edumate_mongo
       auto-index-creation: true
+<<<<<<< HEAD
+  
+  # File Upload Configuration
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+      enabled: true
+=======
+>>>>>>> ac0fede2e2d5b5943ab149d9bb13b5db726135c7
 
 # JWT Configuration
 jwt:
@@ -35,11 +50,33 @@ jwt:
 
 # CORS Configuration
 cors:
+<<<<<<< HEAD
+  allowed-origins: http://localhost:5173,http://localhost:5174
+=======
   allowed-origins: http://localhost:5173
+>>>>>>> ac0fede2e2d5b5943ab149d9bb13b5db726135c7
   allowed-methods: GET,POST,PUT,DELETE,OPTIONS
   allowed-headers: "*"
   allow-credentials: true
 
+<<<<<<< HEAD
+# AI Configuration
+ai:
+  gemini:
+    api-keys:
+      - AIzaSyAtRJvydFU-UZUDnK3Eq3Zx5WE_XKax8Z4
+      - AIzaSyAQT5usx8_0dOvg68fFjFxrIjPCXBQ9Gmw
+      - AIzaSyDu-C7YYqZ8oZsyXOi5S8qEAG5kECm_qJk
+    base-url: https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent
+    max-tokens: 2048
+
+# File Storage Configuration
+file:
+  upload-dir: ./uploads
+  max-size: 10485760 # 10MB
+
+=======
+>>>>>>> ac0fede2e2d5b5943ab149d9bb13b5db726135c7
 # Logging
 logging:
   level:
